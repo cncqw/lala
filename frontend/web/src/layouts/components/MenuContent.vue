@@ -27,6 +27,7 @@
 <script setup lang="tsx">
 import type { PropType } from 'vue';
 import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 import { useLocale } from '@/locales/useLocale';
 import { getActive } from '@/router';
@@ -37,12 +38,14 @@ type ListItemType = MenuRoute & { icon?: string };
 const { navData } = defineProps({
   navData: {
     type: Array as PropType<MenuRoute[]>,
-    default: () => [],
+    default: (): MenuRoute[] => [],
+
   },
 });
 
 const active = computed(() => getActive());
 
+const { t } = useI18n();
 const { locale } = useLocale();
 const list = computed(() => {
   return getMenuList(navData);
@@ -55,7 +58,7 @@ const menuIcon = (item: ListItemType) => {
 };
 
 const renderMenuTitle = (title: string | Record<string, string>) => {
-  if (typeof title === 'string') return title;
+  if (typeof title === 'string') return t(title);
   return title[locale.value];
 };
 

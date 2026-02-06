@@ -3,11 +3,13 @@ import componentsLocale from 'tdesign-vue-next/es/locale/en_US';
 
 import components from './components';
 import layout from './layout';
+import menu from './menu';
 import pages from './pages';
 
 export default {
   lang: 'English',
   layout,
+  menu,
   pages,
   components,
   constants: {

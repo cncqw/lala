@@ -23,7 +23,7 @@ class PermissionController extends Controller
                         'component' => 'Layout',
                         'redirect' => '/dashboard/base',
                         'meta' => [
-                            'title' => 'pages.dashboard.title',
+                            'title' => 'menu.dashboard.title',
                             'icon' => 'dashboard',
                         ],
                         'children' => [
@@ -32,7 +32,7 @@ class PermissionController extends Controller
                                 'name' => 'DashboardBase',
                                 'component' => '/dashboard/base/index',
                                 'meta' => [
-                                    'title' => 'pages.dashboard.base.title',
+                                    'title' => 'menu.dashboard.base.title',
                                 ],
                             ],
                             [
@@ -40,7 +40,7 @@ class PermissionController extends Controller
                                 'name' => 'DashboardDetail',
                                 'component' => '/dashboard/detail/index',
                                 'meta' => [
-                                    'title' => 'pages.dashboard.detail.title',
+                                    'title' => 'menu.dashboard.base.detail',
                                 ],
                             ],
                         ],
@@ -51,7 +51,7 @@ class PermissionController extends Controller
                         'component' => 'Layout',
                         'redirect' => '/list/base',
                         'meta' => [
-                            'title' => 'pages.list.title',
+                            'title' => 'menu.list.title',
                             'icon' => 'view-list',
                         ],
                         'children' => [
@@ -60,7 +60,7 @@ class PermissionController extends Controller
                                 'name' => 'ListBase',
                                 'component' => '/list/base/index',
                                 'meta' => [
-                                    'title' => 'pages.list.base.title',
+                                    'title' => 'menu.list.base.title',
                                 ],
                             ],
                             [
@@ -68,7 +68,7 @@ class PermissionController extends Controller
                                 'name' => 'ListCard',
                                 'component' => '/list/card/index',
                                 'meta' => [
-                                    'title' => 'pages.list.card.title',
+                                    'title' => 'menu.list.card.title',
                                 ],
                             ],
                             [
@@ -76,7 +76,7 @@ class PermissionController extends Controller
                                 'name' => 'ListFilter',
                                 'component' => '/list/filter/index',
                                 'meta' => [
-                                    'title' => 'pages.list.filter.title',
+                                    'title' => 'menu.list.filter.title',
                                 ],
                             ],
                             [
@@ -84,7 +84,7 @@ class PermissionController extends Controller
                                 'name' => 'ListTree',
                                 'component' => '/list/tree/index',
                                 'meta' => [
-                                    'title' => 'pages.list.tree.title',
+                                    'title' => 'menu.list.tree.title',
                                 ],
                             ],
                         ],
@@ -95,7 +95,7 @@ class PermissionController extends Controller
                         'component' => 'Layout',
                         'redirect' => '/form/base',
                         'meta' => [
-                            'title' => 'pages.form.title',
+                            'title' => 'menu.form.title',
                             'icon' => 'edit',
                         ],
                         'children' => [
@@ -104,7 +104,7 @@ class PermissionController extends Controller
                                 'name' => 'FormBase',
                                 'component' => '/form/base/index',
                                 'meta' => [
-                                    'title' => 'pages.form.base.title',
+                                    'title' => 'menu.form.base.title',
                                 ],
                             ],
                             [
@@ -112,7 +112,7 @@ class PermissionController extends Controller
                                 'name' => 'FormStep',
                                 'component' => '/form/step/index',
                                 'meta' => [
-                                    'title' => 'pages.form.step.title',
+                                    'title' => 'menu.form.step.title',
                                 ],
                             ],
                         ],
@@ -123,7 +123,7 @@ class PermissionController extends Controller
                         'component' => 'Layout',
                         'redirect' => '/detail/base',
                         'meta' => [
-                            'title' => 'pages.detail.title',
+                            'title' => 'menu.detail.title',
                             'icon' => 'layers',
                         ],
                         'children' => [
@@ -132,7 +132,7 @@ class PermissionController extends Controller
                                 'name' => 'DetailBase',
                                 'component' => '/detail/base/index',
                                 'meta' => [
-                                    'title' => 'pages.detail.base.title',
+                                    'title' => 'menu.detail.base.title',
                                 ],
                             ],
                             [
@@ -140,7 +140,7 @@ class PermissionController extends Controller
                                 'name' => 'DetailAdvanced',
                                 'component' => '/detail/advanced/index',
                                 'meta' => [
-                                    'title' => 'pages.detail.advanced.title',
+                                    'title' => 'menu.detail.advanced.title',
                                 ],
                             ],
                             [
@@ -148,7 +148,7 @@ class PermissionController extends Controller
                                 'name' => 'DetailDeploy',
                                 'component' => '/detail/deploy/index',
                                 'meta' => [
-                                    'title' => 'pages.detail.deploy.title',
+                                    'title' => 'menu.detail.deploy.title',
                                 ],
                             ],
                             [
@@ -156,7 +156,7 @@ class PermissionController extends Controller
                                 'name' => 'DetailSecondary',
                                 'component' => '/detail/secondary/index',
                                 'meta' => [
-                                    'title' => 'pages.detail.secondary.title',
+                                    'title' => 'menu.detail.secondary.title',
                                 ],
                             ],
                         ],
@@ -167,7 +167,7 @@ class PermissionController extends Controller
                         'component' => 'Layout',
                         'redirect' => '/result/success',
                         'meta' => [
-                            'title' => 'pages.result.title',
+                            'title' => 'menu.result.title',
                             'icon' => 'check-circle',
                         ],
                         'children' => [
@@ -176,7 +176,7 @@ class PermissionController extends Controller
                                 'name' => 'ResultSuccess',
                                 'component' => '/result/success/index',
                                 'meta' => [
-                                    'title' => 'pages.result.success.title',
+                                    'title' => 'menu.result.success.title',
                                 ],
                             ],
                             [
@@ -184,7 +184,7 @@ class PermissionController extends Controller
                                 'name' => 'ResultFail',
                                 'component' => '/result/fail/index',
                                 'meta' => [
-                                    'title' => 'pages.result.fail.title',
+                                    'title' => 'menu.result.fail.title',
                                 ],
                             ],
                             [
@@ -192,7 +192,7 @@ class PermissionController extends Controller
                                 'name' => 'ResultNetworkError',
                                 'component' => '/result/network-error/index',
                                 'meta' => [
-                                    'title' => 'pages.result.networkError.title',
+                                    'title' => 'menu.result.networkError.title',
                                 ],
                             ],
                             [
@@ -200,7 +200,7 @@ class PermissionController extends Controller
                                 'name' => 'Result403',
                                 'component' => '/result/403/index',
                                 'meta' => [
-                                    'title' => 'pages.result.403.title',
+                                    'title' => 'menu.result.403.title',
                                 ],
                             ],
                             [
@@ -208,7 +208,7 @@ class PermissionController extends Controller
                                 'name' => 'Result404',
                                 'component' => '/result/404/index',
                                 'meta' => [
-                                    'title' => 'pages.result.404.title',
+                                    'title' => 'menu.result.404.title',
                                 ],
                             ],
                             [
@@ -216,7 +216,7 @@ class PermissionController extends Controller
                                 'name' => 'Result500',
                                 'component' => '/result/500/index',
                                 'meta' => [
-                                    'title' => 'pages.result.500.title',
+                                    'title' => 'menu.result.500.title',
                                 ],
                             ],
                             [
@@ -224,7 +224,7 @@ class PermissionController extends Controller
                                 'name' => 'ResultBrowserIncompatible',
                                 'component' => '/result/browser-incompatible/index',
                                 'meta' => [
-                                    'title' => 'pages.result.browserIncompatible.title',
+                                    'title' => 'menu.result.browserIncompatible.title',
                                 ],
                             ],
                             [
@@ -232,7 +232,7 @@ class PermissionController extends Controller
                                 'name' => 'ResultMaintenance',
                                 'component' => '/result/maintenance/index',
                                 'meta' => [
-                                    'title' => 'pages.result.maintenance.title',
+                                    'title' => 'menu.result.maintenance.title',
                                 ],
                             ],
                         ],
