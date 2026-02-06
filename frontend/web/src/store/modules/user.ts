@@ -26,7 +26,7 @@ export const useUserStore = defineStore('user', {
     async login(userInfo: Record<string, unknown>) {
       try {
         const res = await loginApi({
-          email: userInfo.account as string,
+          email: (userInfo.email || userInfo.account) as string,
           password: userInfo.password as string,
         });
         
