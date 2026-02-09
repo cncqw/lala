@@ -9,6 +9,7 @@
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
+import { t } from '@/locales';
 import { useLocale } from '@/locales/useLocale';
 import type { RouteMeta } from '@/types/interface';
 
@@ -28,7 +29,7 @@ const crumbs = computed(() => {
     let title = path;
     if (meta?.title) {
       if (typeof meta.title === 'string') {
-        title = meta.title;
+        title = t(meta.title);
       } else {
         title = meta.title[locale.value];
       }
