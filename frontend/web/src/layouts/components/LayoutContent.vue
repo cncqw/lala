@@ -109,7 +109,7 @@ const handleRemove = (options: TTabRemoveOptions) => {
 };
 
 const renderTitle = (title: string | Record<string, string>) => {
-  if (typeof title === 'string') return title;
+  if (typeof title === 'string') return t(title);
   return title[locale.value];
 };
 const handleRefresh = (route: TRouterInfo, routeIdx: number) => {
